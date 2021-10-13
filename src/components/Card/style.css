@@ -5,6 +5,7 @@ p {
 .card {
 	background: white;
 	border-radius: 10px;
+	/* margin: 25%; */
 }
 
 .card-img {
