@@ -33,10 +33,15 @@ p {
 
 .card-info {
 	margin-left: 10px;
+
+	display: flex;
+	align-content: space-between;
 }
 
 .card-data {
 	padding-bottom: 10px;
+	margin: auto;
+
 }
 
 .card-data .title {

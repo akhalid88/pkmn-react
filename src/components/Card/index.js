@@ -29,9 +29,9 @@ function Card({ pokemon }) {
 					<p className="title">Height</p>
 					<p>{pokemon.height}</p>
 				</div>
-				<div className="card-data card-data-ability">
-					<p className="title">Ability</p>
-					<p>{pokemon.abilities[0].ability.name}</p>
+				<div className="card-data card-data-baseXP">
+					<p className="title">Base XP</p>
+					<p>{pokemon.base_experience}</p>
 				</div>
 			</div>
 		</div>
