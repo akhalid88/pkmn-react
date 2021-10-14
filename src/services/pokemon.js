@@ -17,3 +17,18 @@ export async function getPokemon(url) {
 			})
 	})
 }
+
+//for search functionailty/ clickin on specific pokemon card
+export async function getSpecificPokemon(url) {
+
+}
+
+//for getting list of pokemon types
+export async function getAllTypes(url) {
+	
+}
+
+//for filtering pokemon by type
+export async function getPokemonByType(url) {
+
+}
