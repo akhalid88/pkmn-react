@@ -3,6 +3,7 @@ import './App.css';
 import { getAllPokemon, getPokemon } from './services/pokemon';
 import Card from './components/Card';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -72,6 +73,7 @@ function App() {
             {prevUrl ? (<button onClick={prev}>Prev</button>) : <div></div>}
             {nextUrl ? (<button onClick={next}>Next</button>) : <div></div>}
           </div>
+          <Footer/>
         </>
       )}
     </div>
