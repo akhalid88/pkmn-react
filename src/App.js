@@ -49,7 +49,7 @@ function App() {
         return pokemonRecord;
       })
     );
-
+    console.log(_pokemonData);
     setPokemonData(_pokemonData);
   }
 
@@ -73,7 +73,7 @@ function App() {
             {prevUrl ? (<button onClick={prev}>Prev</button>) : <div></div>}
             {nextUrl ? (<button onClick={next}>Next</button>) : <div></div>}
           </div>
-          <Footer/>
+          <Footer />
         </>
       )}
     </div>
