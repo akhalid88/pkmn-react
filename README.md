@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# PKMN React
+
+
+Welcome to the world of Pokemon. View and filter pokemon by type and region to see all the wonderful pokemon and their stats,
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
