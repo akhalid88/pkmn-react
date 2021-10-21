@@ -49,7 +49,7 @@ function App() {
         return pokemonRecord;
       })
     );
-    console.log(_pokemonData);
+    // console.log(_pokemonData);
     setPokemonData(_pokemonData);
   }
 

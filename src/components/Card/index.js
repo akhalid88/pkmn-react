@@ -1,8 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import typeColors from '../../helpers/pokemonTypes';
+// import Popup from '../Popup';
+// import { Button, Modal } from 'react-bootstrap';
 
 function Card({ pokemon }) {
+
+	// const [show, setShow] = useState(false);
+
+	// const handleClose = () => setShow(false);
+	// const handleShow = () => setShow(true);
+
+	// const popupLogic = () => {
+	// 	console.log("Here")
+	// 	return (
+	// 		// <>
+	// 		// 	<Popup showPopup={true} />
+	// 		// </>
+	// 		<>
+	// 			<Modal show={true} onHide={handleClose}>
+	// 				<Modal.Header closeButton>
+	// 					<Modal.Title>Modal heading</Modal.Title>
+	// 				</Modal.Header>
+	// 				<Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+	// 				<Modal.Footer>
+	// 					<Button variant="secondary" onClick={handleClose}>
+	// 						Close
+	// 					</Button>
+	// 					<Button variant="primary" onClick={handleClose}>
+	// 						Save Changes
+	// 					</Button>
+	// 				</Modal.Footer>
+	// 			</Modal>
+	// 		</>
+	// 	)
+	// }
+
 	return (
 		<div className="card">
 			<div className="card-number">
@@ -17,7 +50,7 @@ function Card({ pokemon }) {
 			<div className="card-types">
 				{pokemon.types.map(type => {
 					return (
-						<div className="card-type" style={{ backgroundColor: typeColors[type.type.name] }}>
+						<div className="card-type" key={type.type.name} style={{ backgroundColor: typeColors[type.type.name] }}>
 							{type.type.name}
 						</div>
 					)
