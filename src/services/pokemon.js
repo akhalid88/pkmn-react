@@ -25,7 +25,13 @@ export async function getSpecificPokemon(url) {
 
 //for getting list of pokemon types
 export async function getAllTypes(url) {
-	
+	return new Promise((resolve, reject) => {
+		fetch(url)
+			.then(res => res.json())
+			.then(data => {
+				resolve(data);
+			})
+	})
 }
 
 //for filtering pokemon by type
